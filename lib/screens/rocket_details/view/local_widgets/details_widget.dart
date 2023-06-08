@@ -52,7 +52,7 @@ class _RocketDetailsWidgetState extends State<RocketDetailsWidget> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: AppColors.appBarTitleColor,
-                fontSize: 26.sp,
+                fontSize: 22.sp,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -70,11 +70,11 @@ class _RocketDetailsWidgetState extends State<RocketDetailsWidget> {
                 int index,
               ) {
                 return Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+                  padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
                   child: Container(
-                    width: ScreenUtil().screenWidth - 20.w,
+                    width: ScreenUtil().screenWidth - 30.w,
                     height: 150.h,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), border: Border.all(color: AppColors.black, width: 2.w)),
+                    decoration: BoxDecoration(border: Border.all(color: AppColors.black, width: 3.w)),
                     child: Image.network(
                       widget.flickerImage![index],
                       fit: BoxFit.cover,
